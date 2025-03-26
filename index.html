@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romantic Dashboard for My Love</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="mediaqueries.css">
+
+</head>
+<body>
+    <div class="parallax-bg" id="parallaxBg"></div>
+    <div class="floating-hearts" id="hearts"></div>
+    <div class="dashboard">
+        <div class="sidebar" id="sidebar">
+            <h1>For My Sweet Butterfly</h1>
+            <div class="category">
+                <div class="category-title">Memories</div>
+                <a href="https://example.com/our-memories" class="dashboard-btn" onclick="showModal(event, 'Our Memories', 'A memory we cherish.', this.href)"><span>Our Memories</span></a>
+                <a href="https://example.com/sweet-moments" class="dashboard-btn" onclick="showModal(event, 'Sweet Moments', '<img src=\'https://via.placeholder.com/150\' alt=\'Sweet Moment\'>', this.href)"><span>♥ Sweet Moments</span></a>                
+                <a href="https://example.com/starry-nights" class="dashboard-btn" onclick="showModal(event, 'Starry Nights', 'A night under the stars.', this.href)"><span>🌟 Starry Nights</span></a>
+                <a href="https://example.com/silly-moments" class="dashboard-btn" onclick="showModal(event, 'Silly Moments', 'Remember when we laughed?', this.href)"><span>😊 Silly Moments</span></a>
+                <a href="https://example.com/our-story" class="dashboard-btn" onclick="showModal(event, 'Our Story', 'Our journey together.', this.href)"><span>Our Story</span></a>
+            </div>
+            <!-- Repeat for other categories: Love Notes, Surprises, Dreams, Moments -->
+            <div class="category">
+                <div class="category-title">Love Notes</div>
+                <a href="https://mazudiary.github.io/HowSheIs/" class="dashboard-btn" onclick="showModal(event, 'How She Is', 'A journey through love, painted with moments of magic and warmth.', this.href)"><span>♥ How She Is</span></a>
+                <a href="https://mazudiary.github.io/LoveLightCanvas/" class="dashboard-btn" onclick="showModal(event, 'Love Light Canvas', 'A luminous love story woven in whispers of light and affection.', this.href)"><span>♥ Love Light Canvas</span></a>
+                <a href="https://example.com/love-notes" class="dashboard-btn" onclick="showModal(event, 'Love Notes', 'I love you more every day.', this.href )"><span>♥ Love Notes</span></a>
+                <a href="https://example.com/heartbeats" class="dashboard-btn" onclick="showModal(event, 'Heartbeats', 'My heart beats for you.', this.href)"><span>💓 Heartbeats</span></a>
+                <a href="https://example.com/little-things" class="dashboard-btn" onclick="showModal(event, 'Little Things', 'It’s the little things.', this.href)"><span>Little Things</span></a>
+                <a href="https://example.com/sweet-words" class="dashboard-btn" onclick="showModal(event, 'Sweet Words', 'You’re my everything.', this.href)"><span>Sweet Words</span></a>
+                <a href="https://example.com/love-quotes" class="dashboard-btn" onclick="showModal(event, 'Love Quotes', 'You are my sun.', this.href)"><span>Love Quotes</span></a>            
+            </div>
+            <div class="category">
+                <div class="category-title">Surprises</div>
+                <a href="https://example.com/cute-surprises" class="dashboard-btn" onclick="showModal(event, 'Cute Surprises', '<video src=\'https://www.w3schools.com/html/mov_bbb.mp4\' controls></video>', this.href)"><span>Cute Surprises</span></a>                
+                <a href="https://example.com/just-because" class="dashboard-btn" onclick="showModal(event, 'Just Because', 'A little something.', this.href)"><span>✨ Just Because</span></a>
+                <a href="https://example.com/love-doodles" class="dashboard-btn" onclick="showModal(event, 'Love Doodles', '<img src=\'https://via.placeholder.com/100\' alt=\'Doodle\'>', this.href)"><span>Love Doodles</span></a>                <a href="https://example.com/love-gifts" class="dashboard-btn" onclick="showModal(event, 'Love Gifts', 'A gift from my heart.', this.href)"><span>🎁 Love Gifts</span></a>
+                <a href="https://example.com/inside-jokes" class="dashboard-btn" onclick="showModal(event, 'Inside Jokes', 'That time we giggled!', this.href)"><span>Inside Jokes</span></a>
+            </div>
+            <div class="category">
+                <div class="category-title">Dreams</div>
+                <a href="https://example.com/dreams-together" class="dashboard-btn" onclick="showModal(event, 'Dreams Together', 'Our future awaits.', this.href)"><span>Dreams Together</span></a>
+                <a href="https://example.com/forever-promises" class="dashboard-btn" onclick="showModal(event, 'Forever Promises', 'I promise you forever.', this.href)"><span>Forever Promises</span></a>
+                <a href="https://example.com/secret-wishes" class="dashboard-btn" onclick="showModal(event, 'Secret Wishes', 'My wish for us.', this.href)"><span>🌠 Secret Wishes</span></a>
+                <a href="https://example.com/dream-dates" class="dashboard-btn" onclick="showModal(event, 'Dream Dates', 'A perfect date idea.', this.href)"><span>💫 Dream Dates</span></a>
+                <a href="https://example.com/together-forever" class="dashboard-btn" onclick="showModal(event, 'Together Forever', 'Always and forever.', this.href)"><span>Together Forever</span></a>
+            </div>
+            <div class="category">
+                <div class="category-title">Moments</div>
+                <a href="https://example.com/kisses-hugs" class="dashboard-btn" onclick="showModal(event, 'Kisses & Hugs', 'Sending you a hug!', this.href)"><span>Kisses & Hugs</span></a>
+                <a href="https://example.com/our-songs" class="dashboard-btn" onclick="showModal(event, 'Our Songs', '<audio src=\'https://www.w3schools.com/html/horse.mp3\' controls></audio>', this.href)"><span>🎶 Our Songs</span></a>                <a href="https://example.com/adventures" class="dashboard-btn" onclick="showModal(event, 'Adventures', 'Our next adventure.', this.href)"><span>Adventures</span></a>
+                <a href="https://example.com/cozy-days" class="dashboard-btn" onclick="showModal(event, 'Cozy Days', 'Snuggling with you.', this.href)"><span>Cozy Days</span></a>
+                <a href="https://example.com/you-are-enough" class="dashboard-btn" onclick="showModal(event, 'You Are Enough', 'You’re perfect to me.', this.href)"><span>💖 You Are Enough</span></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="previewModal">
+        <div class="modal-content" id="modalContent">
+            <div id="modalBody"></div>
+            <button class="modal-close" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+    <script src = "script.js"></script>
+</body>
+</html>
