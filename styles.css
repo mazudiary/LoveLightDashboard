@@ -114,13 +114,39 @@ h1 {
     font-size: 18px;
     margin-bottom: 10px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    background: #ff6f91; /* Distinct color from dashboard-btn */
+    padding: 10px 20px; /* Slightly larger padding */
+    border-radius: 20px; /* More rounded */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease; /* Added transform for click effect */
+    color: white;
+    font-weight: bold; /* Bolder text */
+    text-align: center;
+    width: 80%; /* Match subcategory width */
+    max-width: 220px; /* Slightly wider than dashboard-btn */
 }
 
+.category-title:hover {
+    background: #ff4365; /* Lighter shade on hover */
+}
+
+.category-title:active {
+    transform: scale(0.95); /* Subtle press effect */
+}
+
+.subcategories {
+    display: none; /* Hidden by default */
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .dashboard-btn remains as is, for contrast */
 .dashboard-btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #ffb3c1;
+    background: #ffb3c1; /* Different from category-title */
     color: white;
     padding: 10px 20px;
     border-radius: 15px;
@@ -133,7 +159,6 @@ h1 {
     width: 80%;
     max-width: 200px;
 }
-
 .dashboard-btn span {
     margin-left: 10px;
 }
